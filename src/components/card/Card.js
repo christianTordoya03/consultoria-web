@@ -31,7 +31,7 @@ const cases = {
     TituloAsesoriaFinanciera: 'Asesoria para obtener Financiamientos',
 }
 
-const informacion = {
+const informaciones = {
     asesoriaInmobiliaria: `Te asesoramos en todo el proceso para la obtención del financiamiento procompite en la región y/o localidad que te encuentres. Elaboramos tu plan de negocios bajo los criterios establecidos en las bases del concurso procompite.`,
     consultoriaTradicional: `-Ten un administrador a un costo accesible:
     El servicio consiste en tener un administrador para ordenar las finanzas y proyectar los costos. Con este servicio podrás saber la situación real de tu empresa y tener proyecciones para crecer. Te ofrecemos asesoría constante y seguimiento a tus ingresos y gastos de manera semanal, realizando 2 visitas al mes para ver de manera presencial el crecimiento de tu negocio.`,
@@ -60,7 +60,21 @@ const informacion = {
 const Card = () => {
     return (
         <div>
-            <h1>Card</h1>
+            <div>
+                {images.map((image) => (
+                    <img src={image} alt="images about information"/>
+                ))}
+            </div>
+            <div>
+                {cases.map((casse) => (
+                    <p>{casse}</p>
+                ))}
+            </div>
+            <div>
+                {informaciones.map((informacion) => (
+                    <p>{informacion}</p>
+                ))}
+            </div>
         </div>
     )
 }

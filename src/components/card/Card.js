@@ -9,7 +9,7 @@ import AsesoriaLegal from '../../images/asesoria-legal.jpg';
 import AsesoriaParaObtenerFinanciamientos from '../../images/asesoria-para-obtener-financiamientos.jpg';
 
 
-const images = {
+const imagesPhoto = [
     AsesoriaInmobiliaria,
     ConsultoriaTradicional,
     ConsultoriaIntegral,
@@ -18,18 +18,18 @@ const images = {
     Factoring,
     AsesoriaLegal,
     AsesoriaParaObtenerFinanciamientos,
-}
+]
 
-const cases = {
-    TituloAsesoriaInmobiliaria: 'Asesoria Inmobiliaria',
-    TituloConsultoriaTradicional: 'Consultoria Tradicional',
-    TituloConsultoriaIntegral: 'Consultoria Integral',
-    TituloFinanciamientoProcompide: 'Financiamiento Procompite',
-    TituloConsultoriaAdministrativa: 'Consultoria Administrativa',
-    TituloFactoring: 'Factoring',
-    TituloAsesoriaLegal: 'Asesoria Legal',
-    TituloAsesoriaFinanciera: 'Asesoria para obtener Financiamientos',
-}
+const cases = [
+    'Asesoria Inmobiliaria',
+    'Consultoria Tradicional',
+    'Consultoria Integral',
+    'Financiamiento Procompite',
+    'Consultoria Administrativa',
+    'Factoring',
+    'Asesoria Legal',
+    'Asesoria para obtener Financiamientos',
+]
 
 const informaciones = {
     asesoriaInmobiliaria: `Te asesoramos en todo el proceso para la obtención del financiamiento procompite en la región y/o localidad que te encuentres. Elaboramos tu plan de negocios bajo los criterios establecidos en las bases del concurso procompite.`,
@@ -57,23 +57,16 @@ const informaciones = {
     -Capital de Trabajo.`,
 }
 
+
 const Card = () => {
     return (
         <div>
             <div>
-                {images.map((image) => (
-                    <img src={image} alt="images about information"/>
-                ))}
-            </div>
-            <div>
-                {cases.map((casse) => (
-                    <p>{casse}</p>
-                ))}
-            </div>
-            <div>
-                {informaciones.map((informacion) => (
-                    <p>{informacion}</p>
-                ))}
+                {
+                    imagesPhoto.map( image => (
+                        <img key={image} src={image} alt="images about cases"/>
+                    ))
+                }
             </div>
         </div>
     )

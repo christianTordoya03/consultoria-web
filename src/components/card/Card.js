@@ -3,9 +3,10 @@ import {
     BodyCardStyles, 
     BoxImageStyles, 
     CardStyles, 
+    CardTitleStyles,
     ContainerCardsStyles, 
     FirstTitleStyles, 
-    InformationCardStyles, 
+    InformationCardStyles,
     ServicesStyles,
     PStyles,
 } from './CardStyles';
@@ -17,13 +18,16 @@ const Card = () => {
             <FirstTitleStyles>Servicios</FirstTitleStyles>
             <ContainerCardsStyles>
                 {
-                    consultoria.map( ({img, casos, informacion, detalleUno, detalleDos, detalleTres, detalleCuatro, detalleCinco, detalleSeis, detalleSiete,}) => (
+                    consultoria.map( ({img, casos, segundaLineaCasos, informacion, detalleUno, detalleDos, detalleTres, detalleCuatro, detalleCinco, detalleSeis, detalleSiete,}) => (
                         <CardStyles key={casos}>
                             <BoxImageStyles>
                                 <img src={img} alt={casos}/>
                             </BoxImageStyles>
                             <BodyCardStyles>
-                                <h3>{casos}</h3>
+                                <CardTitleStyles>
+                                    <h3>{casos}</h3>
+                                    {segundaLineaCasos && <h3>{segundaLineaCasos}</h3>}
+                                </CardTitleStyles>
                                 <InformationCardStyles>
                                     <PStyles>{informacion}</PStyles>
                                     {detalleUno && <PStyles>{detalleUno}</PStyles>}

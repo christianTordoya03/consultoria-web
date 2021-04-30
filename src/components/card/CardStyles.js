@@ -16,7 +16,6 @@ export const FirstTitleStyles = styled.h1`
     font-style: normal;
     letter-spacing: 0;
     text-transform: uppercase;
-
 `;
 
 export const ContainerCardsStyles = styled.div`
@@ -29,7 +28,13 @@ export const CardStyles = styled.div`
     margin: 0 0 48px 0;
     width: 88%;
     border-radius: 8px;
-    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.08);
+    border: #DDDDDD solid 1px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.08);
+        border: none;
+    }
 `;
 
 export const BoxImageStyles = styled.div`

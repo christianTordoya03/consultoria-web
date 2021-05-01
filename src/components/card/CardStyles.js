@@ -83,7 +83,7 @@ export const InformationCardStyles = styled.div``;
 export const PStyles = styled.p`
     margin: 0;
     text-align: center;
-    font-family: 'roboto';
+    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
     font-style: normal;

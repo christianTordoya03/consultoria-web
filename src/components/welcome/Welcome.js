@@ -1,6 +1,12 @@
 import React from 'react';
-import Background from '../../images/background.jpg';
-import { BodyWelcomeStyles, BoxImageStyles, WelcomeStyles, InformationWelcomeStyles } from './WelcomeStyles';
+// import Background from '../../images/background.jpg';
+import { 
+    BodyWelcomeStyles, 
+    // BoxImageStyles, 
+    WelcomeStyles, 
+    InformationWelcomeStyles 
+} from './WelcomeStyles';
+import '../card/TypeOfLetter.css';
 
 const Welcome = () => {
     return (
@@ -12,9 +18,10 @@ const Welcome = () => {
                     <button>inicio</button>
                 </InformationWelcomeStyles>
             </BodyWelcomeStyles>
-            <BoxImageStyles>
+            {/* <BoxImageStyles>
                 <img src={Background} alt="office"/>
-            </BoxImageStyles>
+            </BoxImageStyles> */}
+            <div className="boxImage"></div>
         </WelcomeStyles>
     )
 }

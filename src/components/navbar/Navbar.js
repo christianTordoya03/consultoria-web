@@ -11,13 +11,13 @@ const Navbar = () => {
             </BoxForLogoStyles>
             <OptionsStyles>
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="about-us/" class="home">Quienes somos</a>
+                    {/* <a href="about-us/" class="home">Quienes somos</a> */}
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="home/" class="home">Inicio</a>
+                    <a href="#home" class="home">Inicio</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="services/" class="home">Servicios</a>
+                    <a href="#services" class="home">Servicios</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
                     <a href="contact-us/" class="home">Contactanos</a>

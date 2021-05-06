@@ -14,7 +14,7 @@ import consultoria from './DataBaseCard';
 
 const Card = () => {
     return (
-        <ServicesStyles>
+        <ServicesStyles id="services">
             <FirstTitleStyles>Servicios</FirstTitleStyles>
             <ContainerCardsStyles>
                 {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Logo from '../../images/logo.png';
 import { BoxForLogoStyles, NavbarStyles, OptionsStyles } from './NavbarStyles';
 
@@ -11,17 +11,30 @@ const Navbar = () => {
             </BoxForLogoStyles>
             <OptionsStyles>
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="#" class="home">Quienes somos</a>
+                    <a href="about-us/" class="home">Quienes somos</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="#" class="home">Inicio</a>
+                    <a href="home/" class="home">Inicio</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="#" class="home">Servicios</a>
+                    <a href="services/" class="home">Servicios</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="#" class="home">Contactanos</a>
+                    <a href="contact-us/" class="home">Contactanos</a>
                 {/* </Link> */}
+
+                {/* <Link to="about-us/" className="home">
+                    Quienes somos
+                </Link>
+                <Link to="home/" className="home">
+                    Inicio
+                </Link>
+                <Link to="services/" className="home">
+                    Servicios
+                </Link>
+                <Link to="contact-us/" className="home">
+                    Contactanos
+                </Link> */}
             </OptionsStyles>
         </NavbarStyles>
     )

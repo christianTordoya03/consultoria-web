@@ -22,18 +22,51 @@ export const ContainerCardsStyles = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 748px 748px 748px;
+
+    @media (max-width: 1310px) {
+        grid-template-rows: 788px 788px 788px;
+    }
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 50% 50%;
+    }
+
+    @media (max-width: 750px) {
+        grid-template-rows: 896px 896px 896px;
+    }
 `;
 
 export const CardStyles = styled.div`
-    margin: 0 0 48px 0;
+    margin: 0 0 32px 0;
     width: 88%;
+    height: 688px;
     border-radius: 8px;
     border: #DDDDDD solid 1px;
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.08);
-        border: none;
+        box-shadow: 0 12px 20px 12px rgba(0, 0, 0, 0.28);
+        margin: 0 0 40px 0;
+    }
+
+    @media (max-width: 1310px) {
+        height: 748px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+
+    @media (max-width: 900px) {
+        width: 92%;
+        height: 768px;
+    }
+
+    @media (max-width: 750px) {
+        margin: 0 0 24px 0;
+        width: 96%;
+        height: 96%;
     }
 `;
 
@@ -53,9 +86,10 @@ export const BoxImageStyles = styled.div`
 `;
 
 export const BodyCardStyles = styled.div`
+    height: 360px;
+    box-sizing: border-box;
     margin: 0;
     padding: 32px 48px;
-    height: 360px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 `;
@@ -88,4 +122,12 @@ export const PStyles = styled.p`
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.4px;
+`;
+
+export const ContainerCardStyles = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;

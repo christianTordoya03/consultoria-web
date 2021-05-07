@@ -1,12 +1,10 @@
 import React from "react";
-import Card from "./components/card/Card";
-import Welcome from "./components/welcome/Welcome";
+import ConsultoriaTordolla from "./pages/ConsultoriaTordolla";
 
 function App() {
   return (
     <div className="App">
-      <Welcome />
-      <Card />
+      <ConsultoriaTordolla />
     </div>
   );
 }

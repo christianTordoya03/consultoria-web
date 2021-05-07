@@ -15,3 +15,26 @@
     height: 100%;
     /* background: rgba(0, 0, 0, 0.24); */
 }
+
+.home {
+    margin: 4px 8px;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    color: #444444;
+}
+
+.home:active {
+    color: #4488FF !important;
+}
+
+.home:visited {
+    color: #444444;
+}
+
+.home:hover {
+    color: #44A9FF;
+}

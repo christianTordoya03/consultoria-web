@@ -10,7 +10,7 @@ import '../card/TypeOfLetter.css';
 
 const Welcome = () => {
     return (
-        <WelcomeStyles>
+        <WelcomeStyles id="home">
             <BodyWelcomeStyles>
                 <InformationWelcomeStyles>
                     <h1>bienvenidos</h1>

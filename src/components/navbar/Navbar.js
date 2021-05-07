@@ -14,13 +14,13 @@ const Navbar = () => {
                     {/* <a href="about-us/" class="home">Quienes somos</a> */}
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="#home" class="home">Inicio</a>
+                    <a href="#home" className="home">Inicio</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="#services" class="home">Servicios</a>
+                    <a href="#services" className="home">Servicios</a>
                 {/* </Link> */}
                 {/* <Link to={"#"} className="home"> */}
-                    <a href="contact-us/" class="home">Contactanos</a>
+                    <a href="contact-us/" className="home">Contactanos</a>
                 {/* </Link> */}
 
                 {/* <Link to="about-us/" className="home">

@@ -75,6 +75,42 @@ export const BodyWelcomeStyles = styled.div`
     @media (max-width: 808px) {
         height: 300px;
     }
+
+    @media (max-width: 561px) {
+        top: 11.5%;
+    }
+
+    @media (max-width: 540px) {
+        top: 11.25%;
+    }
+
+    @media (max-width: 519px) {
+        top: 11%;
+    }
+
+    @media (max-width: 498px) {
+        top: 10.75%;
+    }
+
+    @media (max-width: 467px) {
+        top: 10.5%;
+    }
+
+    @media (max-width: 446px) {
+        top: 10.25%;
+    }
+
+    @media (max-width: 425px) {
+        top: 10%;
+    }
+
+    @media (max-width: 404px) {
+        top: 9.75%;
+    }
+
+    @media (max-width: 383px) {
+        top: 9.5%;
+    }
 `;
 
 export const InformationWelcomeStyles = styled.div`

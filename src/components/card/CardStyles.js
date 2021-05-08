@@ -21,6 +21,20 @@ export const FirstTitleStyles = styled.h1`
     font-style: normal;
     letter-spacing: 0;
     text-transform: uppercase;
+
+    @media (max-width: 1008px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 32px;
+        margin: 16px 0 32px 0;
+    }
+
+    @media (max-width: 401px) {
+        font-size: 24px;
+        margin: 16px 0 24px 0;
+    }
 `;
 
 export const ContainerCardsStyles = styled.div`

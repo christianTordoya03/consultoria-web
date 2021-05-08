@@ -1,8 +1,8 @@
 import React from 'react';
-// import Background from '../../images/background.jpg';
+import Background from '../../images/background.jpg';
 import { 
     BodyWelcomeStyles, 
-    // BoxImageStyles, 
+    BoxImageStyles, 
     WelcomeStyles, 
     InformationWelcomeStyles 
 } from './WelcomeStyles';
@@ -18,10 +18,10 @@ const Welcome = () => {
                     <button>inicio</button>
                 </InformationWelcomeStyles>
             </BodyWelcomeStyles>
-            {/* <BoxImageStyles>
+            <BoxImageStyles>
                 <img src={Background} alt="office"/>
-            </BoxImageStyles> */}
-            <div className="boxImage"></div>
+            </BoxImageStyles>
+            {/* <div className="boxImage"></div> */}
         </WelcomeStyles>
     )
 }

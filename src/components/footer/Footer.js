@@ -4,7 +4,8 @@ import { FooterStyle, FooterTextStyle } from './FooterStyle';
 const Footer = () => {
     return (
         <FooterStyle>
-            <FooterTextStyle>Copyright © 2021 | Powered by Consultoria Tordoya</FooterTextStyle>
+            <FooterTextStyle>Copyright © 2021 | Powered by </FooterTextStyle>
+            <FooterTextStyle>Consultoria Tordoya</FooterTextStyle>
         </FooterStyle>
     )
 }

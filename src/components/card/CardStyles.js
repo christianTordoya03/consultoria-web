@@ -3,6 +3,11 @@ import './TypeOfLetter.css';
 
 export const ServicesStyles = styled.div`
     padding: 24px 8%;
+    box-sizing: border-box;
+
+    @media (max-width: 530px) {
+        width: 100%;
+    } 
 `;
 
 export const FirstTitleStyles = styled.h1`
@@ -16,6 +21,20 @@ export const FirstTitleStyles = styled.h1`
     font-style: normal;
     letter-spacing: 0;
     text-transform: uppercase;
+
+    @media (max-width: 1008px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 32px;
+        margin: 16px 0 32px 0;
+    }
+
+    @media (max-width: 401px) {
+        font-size: 24px;
+        margin: 16px 0 24px 0;
+    }
 `;
 
 export const ContainerCardsStyles = styled.div`
@@ -35,6 +54,15 @@ export const ContainerCardsStyles = styled.div`
     @media (max-width: 750px) {
         grid-template-rows: 896px 896px 896px;
     }
+
+    @media (max-width: 748px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 680px 680px 680px 680px 680px 680px 680px 680px;
+    }
+
+    @media (max-width: 350px) {
+        grid-template-rows: 744px 784px 784px 784px 784px 784px 784px 784px;
+    } 
 `;
 
 export const CardStyles = styled.div`
@@ -68,6 +96,28 @@ export const CardStyles = styled.div`
         width: 96%;
         height: 96%;
     }
+
+    @media (max-width: 748px) {
+        margin: 0 0 32px 0;
+        width: 64%;
+        height: 640px;
+    }
+
+    @media (max-width: 530px) {
+        width: 80%;
+    }
+
+    @media (max-width: 530px) {
+        width: 88%;
+    }   
+
+    @media (max-width: 390px) {
+        width: 96%;
+    } 
+
+    @media (max-width: 350px) {
+        height: 740px;
+    }
 `;
 
 export const BoxImageStyles = styled.div`
@@ -92,6 +142,10 @@ export const BodyCardStyles = styled.div`
     padding: 32px 48px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+
+    @media (max-width: 350px) {
+        padding: 24px 36px;
+    }
 `;
 
 export const CardTitleStyles = styled.div`
@@ -112,7 +166,11 @@ export const CardTitleStyles = styled.div`
     }
 `;
 
-export const InformationCardStyles = styled.div``;
+export const InformationCardStyles = styled.div`
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+`;
 
 export const PStyles = styled.p`
     margin: 0;
@@ -122,6 +180,26 @@ export const PStyles = styled.p`
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.4px;
+
+    @media (max-width: 748px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 13px;
+    }
+
+    @media (max-width: 530px) {
+        font-size: 14px;
+    } 
+    
+    @media (max-width: 530px) {
+        font-size: 13px;
+    } 
+
+    @media (max-width: 350px) {
+        font-size: 14px;
+    } 
 `;
 
 export const ContainerCardStyles = styled.div`
